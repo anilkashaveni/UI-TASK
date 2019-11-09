@@ -1,0 +1,130 @@
+<script type="text/javascript">
+ function validateform(){
+ var name=document.myform.fname.value;   
+if (name==null || name==""){  
+  alert("please enter first name");
+  name.focus();  
+  return false;  
+}
+var name1=document.myform.lname.value;   
+if (name1==null || name1==""){  
+  alert("please enter last name");
+  name1.focus();  
+  return false;  
+}
+var name2=document.myform.email.value;   
+if (name2==null || name2==""){  
+  alert("please enter email ");
+  name2.focus();  
+  return false;  
+}
+var password=document.myform.password.value;
+if (password==null || password==""){  
+  alert("please enter password");
+  password.focus();
+  return false;
+  }
+var repassword=document.myform.conpassword.value;
+if (repassword==null || repassword==""){  
+  alert("please Confirm your password");
+  repassword.focus();
+  return false;
+  }
+if (password==repassword){
+return true;
+}
+else{
+alert("passwords do not match!");
+return false;
+}  
+}  
+</script>
+
+<style>
+body {
+    background-image: url("2.jpg");
+ background-size:cover;
+	}
+	</style>  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>	
+ <body>
+ <center>
+ <form name="myform"action="registervalidate.jsp" method="post" onsubmit="return validateform()">
+<table borderColor="black" border=0 height=350 cellSpacing=0 cellPadding=2  width=300 >
+
+<thead>
+<tr>
+<td align=middle width=221 bgColor="matteblack" colSpan=2 height=24>
+<font size=5 color="matteblack">Register Form</font>
+</td>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td  align=middle width=192 height=42><font size=3 color="matteblack">First Name:*</td>
+<td align=right width=127 height=42>
+<input size=17 type=text maxlength=20 name="fname">
+</font>
+</td>
+</tr>
+<tr>
+<td  align=middle width=192 height=42><font size=3 color="matteblack">Middle Name:</td>
+<td align=right width=127 height=42>
+<input size=17 type=text maxlength=20 name="mname">
+</font>
+</td>
+</tr>
+<tr>
+<td  align=middle width=192 height=42><font size=3 color="matteblack">Last Name:*</td>
+<td align=right width=127 height=42>
+<input size=17 type=text maxlength=20 name="lname">
+</font>
+</td>
+</tr>
+<tr>
+<td  align=middle width=192 height=42><font size=3 color="matteblack">E-Mail Id:*</td>
+<td align=right width=127 height=42>
+<input size=17 type=text maxlength=30 name="email">
+</font>
+</td>
+</tr>
+<tr>
+<td  align=middle width=192 height=42><font size=3 color="matteblack">Mobile Number:</td>
+<td align=right width=127 height=42>
+<input size=17 type=text maxlength=10 name="mobile">
+</font>
+</td>
+</tr>			
+<tr>
+<td  align=middle width=192 height=42><font size=3 color="matteblack">Password:*</td>
+<td align=right width=127 height=42>
+<input size=17 type=password maxlength=10  name="password">
+</td>
+</tr>
+<tr>
+<td  align=middle width=192 height=42><font size=3 color="matteblack">Confirm Password:*</td>
+<td align=right width=127 height=42>
+<input size=17 type=password maxlength=10  name="conpassword">
+</td>
+</tr>			
+<tr>
+<td  align=middle width=221 colSpan=2 height=50>
+<input type=submit value=" Register" name="register">
+<br> 
+<br>
+<font size=3 color="red">* indicates fields are mandatory</font>
+</td>
+</tr>
+</tbody>
+
+</table>
+</form>
+</center>

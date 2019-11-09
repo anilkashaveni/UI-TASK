@@ -1,0 +1,78 @@
+<script type="text/javascript">
+ function validateform(){  
+var name=document.myform.email.value;   
+if (name==null || name==""){  
+  alert("please enter Email id");
+  name.focus();  
+  return false;  
+}
+var password=document.myform.password.value;
+if (password==null || password==""){  
+  alert("please enter password");
+  password.focus();
+  return false;
+  }
+}  
+</script>
+<style>
+body {
+    background-image: url("2.jpg");
+ background-size:cover;
+	}
+	</style>
+<center><font size="10" color="white">HOME PAGE</font></center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+ <body>
+ <form name="myform"action="loginvalidate.jsp" method="post" onsubmit="return validateform()">
+<table borderColor="black" border=0 height=202 cellSpacing=0 cellPadding=2 frame=square>
+
+<thead>
+<tr>
+<td align=middle width=221 bgColor="matteblack" colSpan=2 height=24>
+</td>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td  align=right width=92 height=42><font size=3 color="matteblack">E-mail ID:</td>
+<td align=right width=127 height=42>
+<input size=17 type=text maxlength=30 name="email">
+</font>
+</td>
+</tr>			
+<tr>
+<td  align=right width=92 height=42><font size=3 color="matteblack">Password:</td>
+<td align=right width=127 height=42>
+<input size=17 type=password maxlength=20  name="password">
+</td>
+</tr>			
+<tr>
+<td  align=middle width=221 colSpan=2 height=50>
+<input type=submit value=" Login " name="Login"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="register.html">
+<font size=2 color="matteblack">Register</a>
+</td>
+</tr>
+
+<tr>
+<td align=middle width=221 bgColor="matteblack" colSpan=2 height=24>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</center>
+</body>
